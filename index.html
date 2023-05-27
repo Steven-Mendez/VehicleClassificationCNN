@@ -40,45 +40,48 @@
         </a>
       </div>
     </nav>
-    <main>
-      <h1 class="navbar-title" style="margin-top: 50px">
-        Reconocimiento De Automóviles Mediante Redes Neuronales Convolucionales
-      </h1>
-      <div class="b-example-divider"></div>
-      <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 col-md-4 offset-md-4 text-center">
-            <video id="video" playsinline autoplay style="width: 1px"></video>
-            <canvas
-              id="canvas"
-              width="600"
-              height="600"
-              style="max-width: 100%"
-            ></canvas>
+    <div class="containter">
+      <main>
+        <h1 class="navbar-title" style="margin-top: 50px">
+          Reconocimiento De Automóviles Mediante Redes Neuronales
+          Convolucionales
+        </h1>
+        <div class="b-example-divider"></div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-12 col-md-4 offset-md-4 text-center">
+              <video id="video" playsinline autoplay style="width: 1px"></video>
+              <canvas
+                id="canvas"
+                width="600"
+                height="600"
+                style="max-width: 100%"
+              ></canvas>
 
-            <canvas
-              id="othercanvas"
-              width="150"
-              height="150"
-              style="display: none"
-            ></canvas>
+              <canvas
+                id="othercanvas"
+                width="150"
+                height="150"
+                style="display: none"
+              ></canvas>
 
-            <button
-              class="btn btn-primary mb-2"
-              id="cambiar-camara"
-              onclick="changeCamera();"
-            >
-              Cambiar Cámara
-            </button>
-            <div id="resultado"></div>
+              <button
+                class="btn btn-primary mb-2"
+                id="cambiar-camara"
+                onclick="changeCamera();"
+              >
+                Cambiar Cámara
+              </button>
+              <div id="resultado"></div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="b-example-divider"></div>
-    </main>
+        <div class="b-example-divider"></div>
+      </main>
+    </div>
 
-    <footer class="bg-dark text-light fixed-bottom">
+    <footer class="bg-dark text-light">
       <div class="container">
         <div class="row mt-auto">
           <div class="col-12 text-center">
