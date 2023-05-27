@@ -1,0 +1,32 @@
+#resultado {
+  font-weight: bold;
+  font-size: 6rem;
+  text-align: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-title {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(26, 56, 145);
+}
+
+.bg-dark {
+  background-color: rgb(26, 56, 145) !important;
+}
+
+.btn-primary {
+  background-color: rgb(26, 56, 145) !important;
+}

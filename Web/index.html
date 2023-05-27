@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./static/favicon/favicon-16x16.png"
+    />
+    <title>IA CNN</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container" style="margin: 0">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./static/UNI-Nicaragua.png"
+            alt="Logo"
+            width="146"
+            height="80"
+          />
+          <h4 class="navbar-title">Inteligencia Artificial</h4>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <h1 class="navbar-title" style="margin-top: 50px">
+        Reconocimiento De Automóviles Mediante Redes Neuronales Convolucionales
+      </h1>
+      <div class="b-example-divider"></div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-4 offset-md-4 text-center">
+            <video id="video" playsinline autoplay style="width: 1px"></video>
+            <canvas
+              id="canvas"
+              width="600"
+              height="600"
+              style="max-width: 100%"
+            ></canvas>
+
+            <canvas
+              id="othercanvas"
+              width="150"
+              height="150"
+              style="display: none"
+            ></canvas>
+
+            <button
+              class="btn btn-primary mb-2"
+              id="cambiar-camara"
+              onclick="changeCamera();"
+            >
+              Cambiar Cámara
+            </button>
+            <div id="resultado"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+    </main>
+
+    <footer class="bg-dark text-light fixed-bottom">
+      <div class="container">
+        <div class="row mt-auto">
+          <div class="col-12 text-center">
+            <p class="my-3">
+              Guillen Laínez (2019-0019U) y Mendez Paiz (2019-0048U)
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+    <script src="script/index.js"></script>
+  </body>
+</html>
