@@ -15,6 +15,10 @@ body {
   flex-direction: column;
 }
 
+.navbar .container {
+  align-items: normal;
+}
+
 main {
   flex: 1;
 }
@@ -57,4 +61,8 @@ h1 {
 
 .btn-primary {
   background-color: rgb(26, 56, 145) !important;
+}
+
+h4 {
+  justify-content: start !important;
 }
