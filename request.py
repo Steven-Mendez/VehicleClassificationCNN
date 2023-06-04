@@ -4,7 +4,8 @@ from PIL import Image
 import numpy as np
 
 # URL del servidor TensorFlow Serving
-url = 'http://localhost:8601/v1/models/cars_model:predict'
+baseUrl = 'https://shark-app-mo2mz.ondigitalocean.app'
+url = f'{baseUrl}/v1/models/cars_model:predict'
 
 # Cargue la imagen de entrada y cambie su tamaño a 224x224
 image = Image.open('imagen.jpg')
